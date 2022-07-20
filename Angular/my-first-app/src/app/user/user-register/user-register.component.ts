@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { stringLength } from '@firebase/util';
+// import { stringLength } from '@firebase/util';
 
 @Component({
   selector: 'app-user-register',
@@ -21,6 +21,7 @@ export class UserRegisterComponent implements OnInit {
     mobile: new FormControl(null, [Validators.required, Validators.minLength(10)]),
 
     });
+
 
   }
 // start Création d'un custom validator pour les mot de passe
