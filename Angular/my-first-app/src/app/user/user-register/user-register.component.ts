@@ -13,6 +13,7 @@ export class UserRegisterComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
     this.registerationForm = new FormGroup({
     userName: new FormControl('Mark', Validators.required),
     email: new FormControl(null, [Validators.required, Validators.email]),
